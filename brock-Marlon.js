@@ -64,3 +64,9 @@ function enrollInSummerSchool(students) {
   }
   return students;
 }
+
+function findById(items, idNum) {
+ 
+  return items.find(item => item.id === idNum);
+ 
+}

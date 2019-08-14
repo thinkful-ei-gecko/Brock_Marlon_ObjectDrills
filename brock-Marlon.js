@@ -113,3 +113,9 @@ for (const brock in obj) {
   const value = obj[brock];
   console.log(brock, value);
 }
+
+const hobbitDiet = {
+  meals: ['breakfast','second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper'],
+};
+
+console.log(hobbitDiet.meals[3]);

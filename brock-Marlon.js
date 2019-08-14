@@ -45,7 +45,7 @@ function keyDeleter(obj) {
   delete obj.foo;
   delete obj.bar;
   return obj;
-}*/
+}
 
 function makeStudentsReport(data) {
   
@@ -99,3 +99,17 @@ loaf.hydration = function(){
 };
 
 console.log(loaf.hydration());
+*/
+
+const obj = {
+  foo: 'fii',
+  bar: 'bii',
+  fum: 'fuu',
+  quux: 'qii',
+  spam: 'spii',
+};
+
+for (const brock in obj) {
+  const value = obj[brock];
+  console.log(brock, value);
+}

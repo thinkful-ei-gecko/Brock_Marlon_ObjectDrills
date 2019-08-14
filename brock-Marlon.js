@@ -99,7 +99,7 @@ loaf.hydration = function(){
 };
 
 console.log(loaf.hydration());
-*/
+
 
 const obj = {
   foo: 'fii',
@@ -119,3 +119,30 @@ const hobbitDiet = {
 };
 
 console.log(hobbitDiet.meals[3]);
+*/
+
+const brock = {
+  name: 'Brock',
+  jobTitle: 'unemployed like a boss'
+};
+
+const marlon = {
+  name: 'Marlon',
+  jobTitle: 'unemployed like a boss'
+};
+
+const frank = {
+  name: 'Frank',
+  jobTitle: 'QA Manager'
+};
+
+const chris = {
+  name: 'Chris',
+  jobTitle: 'Chef'
+};
+
+let array = [brock, marlon, frank, chris];
+
+for (let i = 0; i < array.length; i++){
+  console.log(array[i].name, array[i].jobTitle);
+}

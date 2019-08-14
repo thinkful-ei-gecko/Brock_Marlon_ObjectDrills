@@ -123,26 +123,40 @@ console.log(hobbitDiet.meals[3]);
 
 const brock = {
   name: 'Brock',
-  jobTitle: 'unemployed like a boss'
+  jobTitle: 'unemployed like a boss',
+  boss: 'nobody',
 };
 
 const marlon = {
   name: 'Marlon',
-  jobTitle: 'unemployed like a boss'
+  jobTitle: 'unemployed like a boss',
+  boss: 'nobody',
 };
 
 const frank = {
   name: 'Frank',
-  jobTitle: 'QA Manager'
+  jobTitle: 'Founder',
+  boss: 'nobody',
 };
 
 const chris = {
   name: 'Chris',
-  jobTitle: 'Chef'
+  jobTitle: 'Chef',
+  boss: 'Frank',
 };
 
 let array = [brock, marlon, frank, chris];
 
 for (let i = 0; i < array.length; i++){
-  console.log(array[i].name, array[i].jobTitle);
+
+  if (array[i].boss === 'nobody'){
+    console.log(`${array[i].name} doesn't report to anybody`);
+  }
+  else{
+    console.log(`${array[i].name} reports to ${array[i].boss}`);
+  }
 }
+
+
+
+
